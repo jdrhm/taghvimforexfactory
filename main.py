@@ -52,3 +52,4 @@ for value in value_list:
         date_str = value.pop(0).replace('\n', ' - ')
         print(f'Date: {date_str}')
     print(value)
+    
