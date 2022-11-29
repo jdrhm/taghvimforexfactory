@@ -3,6 +3,17 @@ import selenium
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+   return 'Hello Tutorialspoint'
+
+if __name__ == '__main__':
+   app.run()
+
+
 
 def create_driver():
     user_agent_list = [
