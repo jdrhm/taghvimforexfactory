@@ -49,7 +49,7 @@ value_list = parse_data(driver=driver, url=url)
 
     
     
-    Func = open("index.html","w")
+Func = open("index.html","w")
    
 # Adding input data to the HTML file
 Func.write(value_list)
